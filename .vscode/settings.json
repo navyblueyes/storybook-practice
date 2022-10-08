@@ -8,8 +8,8 @@
   },
   "workbench.colorCustomizations": {
     "activityBar.background": "#0f3a36",
-    "titleBar.activeBackground": "#50b1b6",
-    "titleBar.inactiveBackground": "#50b1b6c0",
+    "titleBar.activeBackground": "#232243",
+    "titleBar.inactiveBackground": "#2e2a54",
     "titleBar.activeForeground": "#F6FCEE"
   },
   "deepscan.ignoreConfirmWarning": true

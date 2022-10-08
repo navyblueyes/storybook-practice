@@ -11,7 +11,6 @@ import { GlobalStyle } from './styles/GlobalStyle'
 export default function App() {
   const { value } = useDarkMode(false)
   const theme = value ? darkTheme : lightTheme
-
   return (
     <Router>
       <StoreProvider store={store}>
