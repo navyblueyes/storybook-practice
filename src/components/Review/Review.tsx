@@ -1,3 +1,13 @@
+import styled from 'styled-components'
+
+import { Body } from '../typography'
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+`
+
 type ReviewProps = {
   rating?: number
 }
@@ -20,4 +30,10 @@ const getReview = (rating?: number) => {
   return `★ ${rating.toFixed(1)} ${reviewText}`
 }
 
-export const Review = ({ rating }: ReviewProps) => <div>{getReview(rating)}</div>
+export const Review = ({ rating }: ReviewProps) => (
+  <Wrapper>
+    <Body type="span" size="S" className="review-text">
+      {getReview(rating)}
+    </Body>
+  </Wrapper>
+)
